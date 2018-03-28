@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signin</title>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="keywords" content="App Sign in Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements"./>-->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } jsInterface.showActionBar(false); </script>
+</script>
+<!--webfonts-->
+<!--//webfonts-->
+</head>
+<body>
+	<h1>JHY学派</h1>
+		<div class="app-cam">
+			<div class="cam"><img src="images/cam.png" class="img-responsive" alt="" /></div>
+			
+			<form action="logincheck.php" method="post">
+				<input type="text" class="text" name="username" value="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'username';}" >
+				<input type="password" name="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+				<div class="submit"><input type="submit" name="submit" value="登陆" ></div>
+				<div class="clear"></div>
+				<div class="new">
+					<p class="sign">New here ?<a href="register.php"> Sign Up</a></p>
+					<div class="clear"></div>
+				</div>
+			</form>
+		</div>
+	<!--start-copyright-->
+   		<div class="copy-right">
+				<p>Copyright &copy; 2016.Company name All rights reserved. JHY学派</a></p>
+		</div>
+	<!--//end-copyright-->
+</body>
+</html>

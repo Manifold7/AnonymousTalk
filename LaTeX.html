@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Equation Editor</title>
+</head>
+<body>
+<script type = "text/javascript">
+function EqEditor(text) {
+	document.getElementById("code").value=document.getElementById("code").value+text;
+}
+function upland() {
+var img_url="http://latex.codecogs.com/gif.latex?"+document.getElementById("code").value;
+document.getElementById("Equation").innerHTML="<img src='"+img_url+"' />";
+}
+
+</script>
+
+<image  type="image" src="pictures/math (20).gif" onclick="EqEditor('\\lim_{}')"></image>
+<image  type="image" src="pictures/math (12).gif" onclick="EqEditor('\\int_{}^{}  ')"></image>
+<image  type="image" src="pictures/math (13).gif" onclick="EqEditor('\\oint   ')"></image>
+<image  type="image" src="pictures/math (15).gif" onclick="EqEditor('\\iint  ')"></image>
+<image  type="image" src="pictures/3f.gif" onclick="EqEditor('\\iiint  ')"></image>
+<image  type="image" src="pictures/math (8).gif" onclick="EqEditor('\\frac{\\partial }{\\partial x}')"></image>
+<image  type="image" src="pictures/math (9).gif" onclick="EqEditor('\\frac{\\partial^2 }{\\partial x^2}')"></image>
+<image  type="image" src="pictures/math (10).gif" onclick="EqEditor('\\frac{\\mathrm{d} }{\\mathrm{d} x}')"></image><br/>
+
+<image  type="image" src="pictures/math (6).gif" onclick="EqEditor('\\frac{}{}')"></image>
+<image  type="image" src="pictures/math (7).gif" onclick="EqEditor('\\tfrac{}{}')"></image>
+<image  type="image" src="pictures/math (1).gif" onclick="EqEditor('^{}')"></image>
+<image  type="image" src="pictures/math (2).gif" onclick="EqEditor('_{}')"></image>
+<image  type="image" src="pictures/math (3).gif" onclick="EqEditor('_{}^{}')"></image>
+<image  type="image" src="pictures/math (4).gif" onclick="EqEditor('{_{}}^{}')"></image>
+<image  type="image" src="pictures/math (5).gif" onclick="EqEditor('_{}^{}\\textrm{}')"></image>
+<image  type="image" src="pictures/math (24).gif" onclick="EqEditor('\\sqrt[]{}')"></image><br/>
+
+
+<image  type="image" src="pictures/math (17).gif" onclick="EqEditor('\\bigcap_{}^{}  ')"></image>
+<image  type="image" src="pictures/math (19).gif" onclick="EqEditor('\\bigcup_{}^{}')"></image>
+<image  type="image" src="pictures/5.gif" onclick="EqEditor('\\subset ')"></image>
+<image  type="image" src="pictures/6.gif" onclick="EqEditor('\\supset ')"></image>
+<image  type="image" src="pictures/15.gif" onclick="EqEditor('\\in ')"></image>
+<image  type="image" src="pictures/16.gif" onclick="EqEditor('\\ni ')"></image>
+<image  type="image" src="pictures/17.gif" onclick="EqEditor('\\notin ')"></image><br/>
+
+
+<image  type="image" src="pictures/math (22).gif" onclick="EqEditor('\\sum_{}^{}')"></image>
+<image  type="image" src="pictures/math (26).gif" onclick="EqEditor('\\prod_{}^{}')"></image>
+<image  type="image" src="pictures/asso (1).gif" onclick="EqEditor('\\cong ')"></image>
+<image  type="image" src="pictures/asso (6).gif" onclick="EqEditor('\\leqslant ')"></image>
+<image  type="image" src="pictures/asso (7).gif" onclick="EqEditor('\\geq ')"></image><br/>
+
+<image  type="image" src="pictures/point (2).gif" onclick="EqEditor('n \\to')"></image>
+<image  type="image" src="pictures/point (4).gif" onclick="EqEditor('\\rightarrow')"></image>
+<image  type="image" src="pictures/point (16).gif" onclick="EqEditor('\\xrightarrow[]{}')"></image><br/>
+
+
+
+<textarea id="code" rows="10" cols="40"></textarea>
+
+<br/>
+<button type="button" onclick="upland()">生成公式</button>
+<p>公式图片：<br/><span id="Equation"></span></p>
+
+
+</body>
+</html>
